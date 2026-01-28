@@ -2,6 +2,8 @@ import { getClients } from '@/app/actions'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
+export const dynamic = 'force-dynamic';
+
 export default async function ClientsPage() {
     const clients = await getClients()
 

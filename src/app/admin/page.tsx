@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { getServices, getClients } from '@/app/actions'
+import { getServices, getClients } from '../actions'
+
+export const dynamic = 'force-dynamic';
 import styles from './admin.module.css'
 import Image from 'next/image'
 

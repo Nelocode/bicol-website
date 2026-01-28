@@ -5,6 +5,8 @@ import ScrollToTop from '@/components/ScrollToTop'
 import { ArrowRight, CheckCircle, Smartphone, Globe, BarChart, Users, Zap, Award } from 'lucide-react'
 import Image from 'next/image'
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const services = await getServices()
   const clients = await getClients()

@@ -2,6 +2,8 @@ import { getServices } from '@/app/actions'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
+export const dynamic = 'force-dynamic';
+
 export default async function ServicesIndexPage() {
     const services = await getServices()
 

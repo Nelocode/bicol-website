@@ -16,6 +16,11 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Accept the build argument from EasyPanel
+ARG DATABASE_URL
+# Make it available as an environment variable during build
+ENV DATABASE_URL=${DATABASE_URL}
+
 # Generate Prisma Client
 RUN npx prisma generate
 
